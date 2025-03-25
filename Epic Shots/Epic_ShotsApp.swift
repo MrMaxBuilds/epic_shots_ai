@@ -8,10 +8,11 @@
 import SwiftUI
 
 @main
-struct Epic_ShotsApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+struct EpicShots: App {
+  var body: some Scene {
+    WindowGroup {
+        LoginView()
+          .environmentObject(UserManager.shared)
     }
+  }
 }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,15 +11,24 @@
 		5A864D322D8FADDF00CA53B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A864D312D8FADDF00CA53B8 /* ContentView.swift */; };
 		5A864D342D8FADE000CA53B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A864D332D8FADE000CA53B8 /* Assets.xcassets */; };
 		5A864D372D8FADE000CA53B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A864D362D8FADE000CA53B8 /* Preview Assets.xcassets */; };
+		5AA235182D90780800E55275 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AA235172D90780800E55275 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A14E1242D9272A500D21E71 /* Epic Shots.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Epic Shots.entitlements"; sourceTree = "<group>"; };
 		5A864D2C2D8FADDF00CA53B8 /* Epic Shots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Epic Shots.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A864D2F2D8FADDF00CA53B8 /* Epic_ShotsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Epic_ShotsApp.swift; sourceTree = "<group>"; };
 		5A864D312D8FADDF00CA53B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5A864D332D8FADE000CA53B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A864D362D8FADE000CA53B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5AA235172D90780800E55275 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5AA235192D90786500E55275 /* Epic-Shots-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Epic-Shots-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		5A14E1262D92769500D21E71 /* UserManager */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = UserManager; sourceTree = "<group>"; };
+		5A14E12A2D9276AF00D21E71 /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5A864D292D8FADDF00CA53B8 /* Frameworks */ = {
@@ -37,6 +46,7 @@
 			children = (
 				5A864D2E2D8FADDF00CA53B8 /* Epic Shots */,
 				5A864D2D2D8FADDF00CA53B8 /* Products */,
+				EC6844130DA83F1CADE64AE2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +61,15 @@
 		5A864D2E2D8FADDF00CA53B8 /* Epic Shots */ = {
 			isa = PBXGroup;
 			children = (
+				5A14E1242D9272A500D21E71 /* Epic Shots.entitlements */,
+				5AA235192D90786500E55275 /* Epic-Shots-Info.plist */,
+				5AA235172D90780800E55275 /* GoogleService-Info.plist */,
 				5A864D2F2D8FADDF00CA53B8 /* Epic_ShotsApp.swift */,
 				5A864D312D8FADDF00CA53B8 /* ContentView.swift */,
+				5A14E12A2D9276AF00D21E71 /* Views */,
 				5A864D332D8FADE000CA53B8 /* Assets.xcassets */,
 				5A864D352D8FADE000CA53B8 /* Preview Content */,
+				5A14E1262D92769500D21E71 /* UserManager */,
 			);
 			path = "Epic Shots";
 			sourceTree = "<group>";
@@ -65,6 +80,13 @@
 				5A864D362D8FADE000CA53B8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EC6844130DA83F1CADE64AE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +103,10 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				5A14E1262D92769500D21E71 /* UserManager */,
+				5A14E12A2D9276AF00D21E71 /* Views */,
 			);
 			name = "Epic Shots";
 			productName = "Epic Shots";
@@ -127,6 +153,7 @@
 			files = (
 				5A864D372D8FADE000CA53B8 /* Preview Assets.xcassets in Resources */,
 				5A864D342D8FADE000CA53B8 /* Assets.xcassets in Resources */,
+				5AA235182D90780800E55275 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,12 +296,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Epic Shots/Epic Shots.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Epic Shots/Preview Content\"";
 				DEVELOPMENT_TEAM = LBM2PA68YJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Epic-Shots-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,12 +327,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Epic Shots/Epic Shots.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Epic Shots/Preview Content\"";
 				DEVELOPMENT_TEAM = LBM2PA68YJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Epic-Shots-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
