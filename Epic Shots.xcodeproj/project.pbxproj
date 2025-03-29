@@ -26,7 +26,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5A14E1262D92769500D21E71 /* UserManager */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = UserManager; sourceTree = "<group>"; };
+		5A14E1262D92769500D21E71 /* Managers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Managers; sourceTree = "<group>"; };
 		5A14E12A2D9276AF00D21E71 /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -69,7 +69,7 @@
 				5A14E12A2D9276AF00D21E71 /* Views */,
 				5A864D332D8FADE000CA53B8 /* Assets.xcassets */,
 				5A864D352D8FADE000CA53B8 /* Preview Content */,
-				5A14E1262D92769500D21E71 /* UserManager */,
+				5A14E1262D92769500D21E71 /* Managers */,
 			);
 			path = "Epic Shots";
 			sourceTree = "<group>";
@@ -105,7 +105,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				5A14E1262D92769500D21E71 /* UserManager */,
+				5A14E1262D92769500D21E71 /* Managers */,
 				5A14E12A2D9276AF00D21E71 /* Views */,
 			);
 			name = "Epic Shots";
@@ -304,6 +304,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Epic-Shots-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to take photos\n\n\n\nThis app needs camera access to take photos\n\n\n\nThis app needs camera access to take photos to transform!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -335,6 +336,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Epic-Shots-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to take photos\n\n\n\nThis app needs camera access to take photos\n\n\n\nThis app needs camera access to take photos to transform!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
